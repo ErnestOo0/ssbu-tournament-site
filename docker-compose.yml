@@ -1,17 +1,22 @@
 services:
   serveur:
-    build: ./backend
-    volumes:
-      - .:/app
+    image: serveur
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    
-  client:
-    build: ./frontend
-    volumes:
-      - .:/app
-    ports:
-      - "8080:8080"
-   
+      - 8080:8080
 
-    
+  client:
+    image: client
+    build: 
+      context : ./frontend
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+
+
+
+

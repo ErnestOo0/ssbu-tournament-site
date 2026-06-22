@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+//import App from './App.tsx'
+import Pretournament_page from './app/pretournament/page.tsx'
 
-const apiAdress = "http://localhost:3000/"
+const apiAdress = "http://localhost:8080/"
 
 fetch(apiAdress).then(response => {
     if (!response.ok) {
@@ -16,6 +17,6 @@ fetch(apiAdress).then(response => {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Pretournament_page />
   </StrictMode>,
 )
