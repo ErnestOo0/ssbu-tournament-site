@@ -1,11 +1,15 @@
 services:
   serveur:
     build: ./backend
+    volumes:
+      - .:/app
     ports:
       - "3000:3000"
     
   client:
     build: ./frontend
+    volumes:
+      - .:/app
     ports:
       - "8080:8080"
    
