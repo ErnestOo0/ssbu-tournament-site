@@ -1,9 +1,10 @@
-import Ranking_line from "./Ranking_line"
+import {Ranking_detail, Ranking_head } from "./Ranking_line"
 
 function Ranking(){
     return (
         <div>
-            <Ranking_line />
+            <Ranking_head />
+            <Ranking_detail />
         </div>
         
     )
