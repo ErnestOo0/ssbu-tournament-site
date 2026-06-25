@@ -1,27 +1,31 @@
 export function Ranking_head(){
     return (
 
-        <div className="flex justify-around">
-            <p>Pos.</p>
-            <p>Nom</p>
-            <p>V</p>
-            <p>Mj</p>
-            <p>Recap</p>
-        </div>
+        <thead>
+            <tr>
+                <th>Pos</th>
+                <th>Nom</th>
+                <th>V</th>
+                <th>Mj</th>
+                <th>Recath</th>
+            </tr>
+        </thead>
         
     )
 }
 
 export function Ranking_detail(){
     return (
-
-        <div className="flex justify-around">
-            <p>1</p>
-            <p>A</p>
-            <p>3</p>
-            <p>5</p>
-            <p>VDVVDD</p>
-        </div>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td>3</td>
+                <td>5</td>
+                <td>VDVVDD</td>
+            </tr>
+        </tbody>
+       
         
     )
 }

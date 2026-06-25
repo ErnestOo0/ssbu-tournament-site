@@ -4,8 +4,15 @@ import Matchs_list from "../../components/Matchs_list";
 function Pretournament_page(){
     return(
         <div className="flex justify-around">
-            <Ranking />
-            <Matchs_list /> 
+            <div>
+                <h2 className="text-center">Classement</h2>
+                <Ranking />
+            </div>
+           <div>
+                <h2 className="text-center">Matchs</h2>
+                <Matchs_list /> 
+           </div>
+            
         </div>
         
     )
